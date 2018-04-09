@@ -5,7 +5,7 @@ The implementation is done using 3 mutex semaphores, one for the activation/deac
 The idea is that initially all the consumers are locked in semaphore 0, and each one that reads the first element is locked in semaphore 1. Afterwards, each one that reads the second element is locked in semaphore 0 and so on. This strategy is followed in order to avoid conflicts. 
 
 Compilation: make
-Execution: "./programm <arg1> <arg2>"
+Execution: "./program <arg1> <arg2>"
 
 <arg1> = how many the consumers are
 <arg2> = size of integer array
